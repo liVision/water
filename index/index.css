@@ -1,3 +1,9 @@
 .header {
-	color: black;
+	height: 6rem;
+	background: red;
+}
+.waterLogo {
+	margin-left: 2rem;
+	margin-top: 2rem;
+	height: 4rem;
 }
