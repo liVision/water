@@ -1,9 +1,13 @@
-.header {
-	height: 6rem;
-	background: red;
-}
-.waterLogo {
-	margin-left: 2rem;
-	margin-top: 2rem;
-	height: 4rem;
+.div-aixinchou {
+  padding: 0 16px;
+  height: 60px;
+  display: flex;
+  background: red;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 0 #eee;
 }
