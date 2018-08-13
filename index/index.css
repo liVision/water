@@ -527,3 +527,457 @@ img {
   font-weight: 300;
   line-height: 1.3;
 }
+.div-progress {
+	padding: 0 16px 15px 16px;
+	background: #fff;
+}
+.div-progress .div-title {
+  margin-top: 30px;
+  margin-bottom: 13px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.div-progress .div-title .p-key {
+  font-size: 18px;
+  color: #111;
+}
+.div-progress .content, .div-progress .content .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.div-progress .content .left {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.div-progress .content, .div-progress .content .left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.div-progress .content .left .time {
+    width: 53.5px;
+    line-height: 22px;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #000;
+    background: #f5f5f5;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.div-progress .content .right {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 17.5px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+.div-progress .content .right .div-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.div-progress .content .right .div-top p {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 20px;
+}
+.div-progress .content .right .img-head {
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.div-progress .content .right .div-top .nickname {
+    max-width: 115px;
+    margin-left: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    color: #576b95;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.div-progress .content .right .div-top .img-comment {
+    width: 19px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAfCAYAAACLSL/LAAAAAXNSR…GpH9M0DYMgIFytsgsYdi0bo20fdbtdbp99wRl7w+fCBskvrSTOJN8wEJIAAAAASUVORK5CYII=) 0 0 no-repeat;
+    background-size: 100%;
+}
+.div-progress .content .right .trend-img img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 1px solid #dadada;
+}
+.div-progress .content .right .p-comment {
+    font-size: 13px;
+    color: #333;
+    margin-left: 2.5px;
+    margin-top: 10px;
+    font-weight: 300;
+    word-break: break-all;
+}
+.div-progress .div-spread {
+    text-align: center;
+    color: #666;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.divider {
+    width: 100%;
+    height: 9px;
+    background: #efefef;
+}
+.div-help {
+    margin-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #fff;
+    border-bottom: none;
+}
+.div-help .div-title .p-help-tip {
+    font-size: 18px;
+    color: #111;
+}
+.div-help .div-title .text-contribute-number {
+    height: 54px;
+    line-height: 54px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.div-help .content, .div-help .content .left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.div-help .content {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dadada;
+}
+.fav-value-tip-wrap-contribute {
+    width: 87%;
+    right: auto;
+    top: auto;
+    bottom: 54px;
+}
+
+.fav-value-tip-wrap {
+    width: 87%;
+    bottom: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    padding: 6% 8%;
+    padding-right: 4%;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #000;
+    border: .5px solid #000;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    opacity: .8;
+    z-index: 100;
+}
+.fav-value-tip-wrap img {
+    width: 24px;
+    height: 28.5px;
+    margin: 5px 20px 0 0;
+    z-index: 100;
+}
+.fav-value-tip-wrap .content {
+    z-index: 100;
+}
+.fav-value-tip-wrap-contribute>span {
+    border: none;
+    padding: 0;
+}
+.fav-value-tip-wrap-contribute .arrow {
+    left: 67px;
+}
+.fav-value-tip-wrap .arrow {
+    left: 81px;
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    height: 0;
+    border-width: 8px 6px 0;
+    border-style: solid;
+    border-color: #000 transparent transparent;
+}
+.fav-value-tip-wrap-contribute>span {
+    border: none;
+    padding: 0;
+}
+.div-help .content .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.div-help .content .left .img-head {
+    width: 50px; 
+    height: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.div-help .content .right {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 18.5px;
+}
+.div-help .content .right .div-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #333;
+}
+.div-help .content .right .div-top .p-help-deco {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+.div-help .content .right .div-top .p-help-deco .nickname {
+    max-width: 100px;
+    white-space: nowrap;
+    display: inline-block;
+    color: #576b95;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.div-help .content .right .div-top .p-help-deco span {
+    display: inline-block;
+    overflow: hidden;
+}
+.div-help .content .right .div-top .p-help-deco .money-comment>em {
+    color: #ffc400;
+}
+.div-help .content .right .div-top .img-comment {
+    width: 19px;
+    background: url(../images/leave-message.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.div-help .content .right .p-comment {
+    font-size: 15px;
+    color: #333;
+    margin-left: 2.5px;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+.div-help .content .right .other-info-comment .water {
+    margin-right: 18px;
+}
+
+.div-help .content .right .other-info-comment .common {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+    font-weight: 300;
+}
+.div-help .content .right .other-info-comment .water>img {
+    position: relative;
+    top: 2px;
+    width: 10.5px;
+    height: 15px;
+    margin-right: 2px;
+}
+.div-help .content .right .other-info-comment .common {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+    font-weight: 300;
+}
+
+.div-help .content .right .time {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #999;
+    font-weight: 300;
+}
+.root {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.vux-popup-dialog {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #eee;
+    z-index: 501;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.float-head {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: -40px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffba00;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 49px;
+    z-index: 50;
+}
+.float-head .case-status {
+    position: relative;
+    left: 16px;
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    text-align: left;
+}
+.float-head .case-operation {
+    position: relative;
+    right: 16px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.pull-float, .push-float {
+    position: relative;
+    top: 42%;
+    left: -3%;
+    width: 9.5px;
+    height: 6px;
+}
+.all-case {
+    margin: 79px 0 25px;
+}
+.advertisement {
+    margin: 0 4%;
+    border: .5px solid rgba(0,0,0,.08);
+}
+.img-wrap .img-banner {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.spacing-container {
+    margin: 0 4%;
+}
+.advertisement {
+    margin: 0 4%;
+    border: .5px solid rgba(0,0,0,.08);
+}
+.footer-end-test {
+    position: fixed;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 50;
+    width: 100%;
+    height: 49px;
+    background-color: #ffba00;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 49px;
+}
