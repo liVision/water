@@ -1,3 +1,13 @@
+#app {
+  height: 100%;
+  position: relative;
+}
+.root {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
 .div-header-zindex {
 	z-index: 100;
 }
@@ -878,12 +888,7 @@ img {
     color: #999;
     font-weight: 300;
 }
-.root {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    overflow: hidden;
-}
+
 .vux-popup-dialog {
     position: fixed;
     left: 0;
@@ -901,6 +906,67 @@ img {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
+.vux-popup-dialog.vux-popup-left {
+  width: auto;
+  height: 100%;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.vux-popup-dialog.vux-popup-right {
+  width: auto;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+.vux-popup-dialog.vux-popup-top {
+  width: 100%;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+.vux-popup-mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.vux-popup-mask.vux-popup-show {
+  opacity: 1;
+}
+.vux-popup-animate-bottom-enter,
+.vux-popup-animate-bottom-leave-active {
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+}
+.vux-popup-animate-left-enter,
+.vux-popup-animate-left-leave-active {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.vux-popup-animate-right-enter,
+.vux-popup-animate-right-leave-active {
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.vux-popup-animate-top-enter,
+.vux-popup-animate-top-leave-active {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
 .float-head {
     position: relative;
     display: -webkit-box;
@@ -926,6 +992,7 @@ img {
     -ms-flex: 3;
     flex: 3;
     text-align: left;
+    line-height: 49px;
 }
 .float-head .case-operation {
     position: relative;
@@ -937,6 +1004,7 @@ img {
     text-align: right;
     font-size: 14px;
     font-weight: lighter;
+    line-height: 49px;
 }
 .pull-float, .push-float {
     position: relative;
@@ -946,7 +1014,7 @@ img {
     height: 6px;
 }
 .all-case {
-    margin: 79px 0 25px;
+    margin: 79px 0 25px 0;
 }
 .advertisement {
     margin: 0 4%;
@@ -980,4 +1048,144 @@ img {
     font-weight: 700;
     text-align: center;
     line-height: 49px;
+}
+.footer-end-test .case-status {
+  position: relative;
+  left: 16px;
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  text-align: left;
+  line-height: 49px;
+}
+.footer-end-test .case-operation {
+  position: relative;
+  right: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 49px;
+}
+.spacing-container {
+  margin: 0 4%;
+}
+.spacing {
+  height: 8px;
+  background-color: #eee;
+}
+.none {
+  display: none;
+}
+.overlay-gray, .overlay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 601;
+  opacity: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.overlay {
+  background-color: rgba(0,0,0,.5);
+}
+.dialog {
+  position: relative;
+  width: 85%;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.close {
+  width: 100%;
+  text-align: right;
+}
+.close-btn {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  padding: 15px 15px 0;
+  z-index: 10;
+}
+.model {
+  padding: 0 20px 30px;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+}
+.operation-step {
+  margin-top: 13px;
+  text-align: left;
+}
+.operation-step-item {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.check {
+  display: block;
+  margin-top: 24px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffba00;
+}
+.dialog .title {
+  padding: 22.5px 15px 10px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.dialog .title strong {
+  font-weight: 400;
+  line-height: 30px;
+}
+.dialog .content {
+  padding: 0 11px;
+  color: #888;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.dialog a {
+  display: block;
+  margin-top: 11px;
+  height: 50px;
+  color: #0bb20c;
+  font-size: 17.5px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px solid #d5d5d6;
 }
