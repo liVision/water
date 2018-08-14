@@ -5,8 +5,305 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
-  登录界面
+  <div class="app-root" id="app">
+  	<div class="root">
+  		<div class="content-wrap-box">
+  			<div class="content-wrap">
+  				<div class="banner">
+  					<img src="../images/banner.jpg">
+  				</div>
+  				<div>
+  					<div class="info-title">登记求助信息</div>
+  					<div class="help-title">登记后筹款顾问将尽快电话联系您，协助您发起筹款</div>
+  					<div>
+  						<div class="input-wrap">
+  							<input type="text" name="" placeholder="请输入你的手机号">
+  						</div>
+  						<div class="input-wrap">
+  							<input type="text" name="" placeholder="请输入患者所患疾病">
+  						</div>
+  						<span class="donation-title">你要为谁筹款</span>
+  						<div class="input-wrap input-wrap-third">
+  							<select class="select-raise" dir="rtl">
+  								<option value>请选择</option>
+  								<option value="自己">自己</option>
+  								<option value="配偶/父母/子女/其他亲属">配偶/父母/子女/其他亲属</option>
+  								<option value="同学/同事/朋友">同学/同事/朋友</option>
+  								<option value="其他">其他</option>
+  							</select>
+  							<i class="arrow-btn"></i>
+  						</div>
+  						<div class="patient-container">
+  							<div class="patient-title">患者是否已在水滴筹筹款？ <span>(必选)</span></div>
+  							<div class="select-content">
+  								<div class="select-content-left">	 <input type="radio" value="0" 		name="" id="0">
+  									<label for="0">尚未筹款</label>
+  								</div>
+  								<div class="select-content-right">	 <input type="radio" value="1" 		name="" id="1">
+  									<label for="1">已经在筹款</label>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="button">免费筹款</div>
+  				</div>
+  			</div>
+  			<div>
+  				<div class="info">
+  					<h2 class="landing-title">他们为什么选择水滴筹？</h2>
+  					<div class="section">
+  						<div class="logo">
+  							<div class="back">
+  								<i class="icon1"></i>
+  							</div>
+  						</div>
+  						<h4>筹款不收手续费</h4>
+  						<p class="desc">
+  							0手续费，筹到多少给多少
+  							<br>
+  							同样筹款30万，帮你省下6000元手续费
+  						</p>
+  					</div>
+  					<div class="section">
+  						<div class="logo">
+  							<div class="back">
+  								<i class="icon2"></i>
+  							</div>
+  						</div>
+  						<h4>筹款顾问1对1服务</h4>
+  						<p class="desc">
+  							如何筹钱？不会发起？筹款顾问贴心帮你解答
+  							<br>
+  							专人服务，协助发起筹款
+  						</p>
+  					</div>	
+  				</div>
+  				<div class="about">
+  					<div class="about-title">关于水滴筹</div>
+  					<div class="about-content">
+  						<div class="about-content-item">
+  							<div class="about-content-item-circle">
+  								<span class="about-content-item-circle-fund">62</span>
+  								<span class="about-content-item-circle-unit">亿</span>
+  							</div>
+  							<div class="about-content-item-desc">
+  								<span>已经帮助55万多家庭累计筹款62亿元</span>
+  							</div>
+  						</div>
+  						<div class="about-content-item">
+  							<div class="about-content-item-circle">
+  								<span class="about-content-item-circle-fund">2.1</span>
+  								<span class="about-content-item-circle-unit">亿</span>
+  							</div>
+  							<div class="about-content-item-desc">
+  								<span>获得腾讯等知名投资机构2.1亿投资</span>
+  							</div>
+  						</div>
+  						<div class="about-content-item">
+  							<div class="about-content-item-circle">
+  								<span class="about-content-item-circle-fund">10</span>
+  								<span class="about-content-item-circle-unit">大</span>
+  							</div>
+  							<div class="about-content-item-desc">
+  								<span>水滴筹荣获2017年十大慈善项目</span>
+  							</div>
+  						</div>
+  						<div class="about-content-item">
+  							<div class="about-content-item-circle">
+  								<span class="about-content-item-circle-fund">26</span>
+  								<span class="about-content-item-circle-unit">余</span>
+  							</div>
+  							<div class="about-content-item-desc">
+  								<span>已斩获26余项奖项</span>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="about-letter">
+  						<div class="new-letter-title">
+  							<img src="../images/jianxun.png">
+  						</div>
+  						<div class="swiper-container">
+  							<div class="swiper swiper vertical">
+  								<div class="swiper-wrap">
+  									<div class="title-container">
+  										<a class="title-container-item">水滴筹：互联网+爱心公益 成就2017第一筹款平台</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴公益成为民政部指定慈善组织互联网募捐信息平台</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴互助、水滴筹创始人沈鹏获称2017年度公益人物</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴筹：互联网+爱心公益 成就2017第一筹款平台</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">一年半筹款25亿： 水滴筹改变10万重病患者人生轨迹</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">女儿烧伤生命垂危母亲车祸身亡 水滴筹1天筹满20万助其渡难关</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴筹、水滴互助获1.6亿元A轮融资</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴筹：互联网+爱心公益 成就2017第一筹款平台</a>
+  									</div>
+  									<div class="title-container">
+  										<a class="title-container-item">水滴公益成为民政部指定慈善组织互联网募捐信息平台</a>
+  									</div>
+  								</div>
+  								<div class="swiper-pagination">
+  									<span class="swiper-pagination-bullet"></span>
+  									<span class="swiper-pagination-bullet"></span>
+  									<span class="swiper-pagination-bullet"></span>
+  									<span class="swiper-pagination-bullet"></span>
+  									<span class="swiper-pagination-bullet"></span>
+  									<span class="swiper-pagination-bullet"></span>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="line"></div>
+  				<div class="invest">
+  					<h2 class="landing-title">选择腾讯旗下水滴筹 更放心</h2>
+  					<h1>获得腾讯等知名投资机构2.1亿联合投资</h1>
+  					<ul class="compony-list">
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/tencent.png" alt="">
+  						</li>
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/meituan.png" alt="">
+  						</li>
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/zhenge.png" alt="">
+  						</li>
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/idg.png" alt="">
+  						</li>
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/banyan.png" alt="">
+  						</li>
+  						<li>
+  							<img data-v-ff2a69bc="" src="../images/dianliang.png" alt="">
+  						</li>
+  					</ul>
+  				</div>
+  				<div class="support">
+  					<div class="support-line"></div>
+  					<h1 class="support-title">30位互联网大佬力挺</h1>
+  					<div class="content-box">
+  						<ul class="people-list">
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/wangxing.png" data-src="../images/wangxing.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">王兴</h5>
+  								<p class="compony">美团-大众点评CEO</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/zhangzhen.png" data-src="../images/zhangzhen.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">张震</h5>
+  								<p class="compony">高榕资本合伙人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/wangxing.png" data-src="../images/wangxing.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">徐小平</h5>
+  								<p class="compony">真格基金创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/chenqi.png" data-src="../images/chenqi.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">陈琪</h5>
+  								<p class="compony">蘑菇街创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/lijing.png" data-src="../images/lijing.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">李璟</h5>
+  								<p class="compony">大众点评创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/wangqiang.png" data-src="../images/wangqiang.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">王强</h5>
+  								<p class="compony">新东方联合创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/chaike.png" data-src="../images/chaike.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">柴可</h5>
+  								<p class="compony">大姨吗联合创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/qianjing.png" data-src="../images/qianjing.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">钱婧</h5>
+  								<p class="compony">超级诊疗室创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/sushu.png" data-src="../images/sushu.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">苏舒</h5>
+  								<p class="compony">名医主刀创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/zhaoshiyong.png" data-src="../images/zhaoshiyong.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">赵世勇</h5>
+  								<p class="compony">斗米兼职创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/chenxiangdong.png" data-src="../images/chenxiangdong.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">陈向东</h5>
+  								<p class="compony">跟谁学创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/zhanglianglun.png" data-src="../images/zhanglianglun.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">张良伦</h5>
+  								<p class="compony">贝贝网创始人</p>
+  							</li>
+  							<li>
+  								<div class="portrait">
+  									<img src="../images/maodaqing.png" data-src="../images/maodaqing.png" lazy="loaded">
+  								</div>
+  								<h5 class="name">毛大庆</h5>
+  								<p class="compony">前万科高级副总裁</p>
+  							</li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="footer">
+  					<p class="tips">如有疑问，欢迎致电筹款顾问</p>
+  					<a href="tel:4006861179" class="tel">
+  						<i></i>
+  						<span>400-686-1179</span>
+  					</a>
+  					<p class="brand"></p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
 </body>
 </html>

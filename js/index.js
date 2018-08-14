@@ -33,11 +33,11 @@ $(document).ready(function() {
     if ($(".jinzhan").hasClass("none")) {
       $(".jinzhan").removeClass("none");
       $(".jinzhan").css("display", "flex")
-      $(".jinzhan-spread").text("收起")
+      $(".jinzhan-spread span").text("收起")
     } else {
       $(".jinzhan").addClass("none");
       $(".jinzhan").css("display", "none")
-      $(".jinzhan-spread").text("展开")
+      $(".jinzhan-spread span").text("展开")
     }
   })
   $(".p-title-report").on('click', function() {
