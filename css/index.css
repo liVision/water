@@ -271,6 +271,10 @@ img {
 	-webkit-box-align: center;
 	align-items: center;
 }
+.div-prove-material .title-right span {
+  font-size: 14px;
+  color: #ffc400;
+}
 .div-prove-material .title {
 	width: 100%;
 	margin: 18px 53.5px 0 0;
@@ -1116,6 +1120,7 @@ img {
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-direction: normal;
 }
 .close {
   width: 100%;
