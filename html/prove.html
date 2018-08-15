@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 37.5px;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/prove.css">
 </head>
 <body>
-  证明
+  <div id="app">
+  	<div class="root">
+  		<p class="thanks">有您的证明，求助会取得更多人的信任，为您点赞！</p>
+  		<div class="relation-info-wrap">
+  			<div class="relation-item">
+  				<h5>您和筹款人的关系</h5>
+  				<div class="item-input">
+  					<select class="relation-select">
+  						<option >请选择</option>
+  						<option value="0">亲属</option>
+  						<option value="1">朋友</option>
+  						<option value="2">同事</option>
+  						<option value="3">同学</option>
+  						<option value="4">邻居</option>
+  						<option value="7">病友</option>
+  						<option value="8">医护</option>
+  						<option value="9">其他</option>
+  						<option value="10">师生</option>
+  					</select>
+  					<div class="arrow"></div>
+  				</div>
+  			</div>
+  			<div class="relation-item">
+  				<h5>您的姓名</h5>
+  				<div class="item-input">
+  					<input type="text" name="" required="required" placeholder="请填写真实姓名" class="relation-select">
+  				</div>
+  			</div>
+  			<div class="relation-item">
+  				<h5>证明内容</h5>
+  				<div class="item-input">
+  					<textarea type="textarea" required="required" placeholder="筹款人是您的...您了解的情况是...(最多200字)" maxlength="200" class="relation-select input-content"></textarea>
+  				</div>
+  			</div>
+  			<div class="relation-item">
+  				<h5>实名认证</h5>
+  				<span class="tips">实名后，您的证明将被优先展示。身份证信息会被严格保密，不会被展示给其他人。</span>
+  				<div class="root">
+  					<div class="item-input">
+  						<input type="text" name="" placeholder="请填写身份证号" class="relation-select">
+  					</div>
+  				</div>
+  			</div>
+  			<div class="btn-submit">提交</div>
+  			<p class="prove">
+  				感谢您的热心，如果您参与、探访、深入了解过此筹款项目，请您如实填写真实身份、真实情况，这将为受助人赢得更多信任。同时提醒您，您需要对证实内容的真实性负责，如有不实，需承担相应法律责任。
+  			</p>
+  		</div>
+  	</div>
+  </div>
 </body>
 </html>

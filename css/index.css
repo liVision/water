@@ -1194,3 +1194,8 @@ img {
   text-align: center;
   border-top: 1px solid #d5d5d6;
 }
+.div-progress .content .right .div-top .img-comment {
+    width: 19px;
+    background: url(../images/leave-message.png) 0 0 no-repeat;
+    background-size: 100%;
+}

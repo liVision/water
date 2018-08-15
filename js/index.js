@@ -54,4 +54,7 @@ $(document).ready(function() {
     $('.explain-text').css({"opacity":"0","display":"none"});
     $('.explain-dialog').fadeOut(500);
   });
+  $(".p-prove-link").on('click', function() {
+    window.location.href = "./prove.html";
+  });
 });
