@@ -7,6 +7,34 @@
   <title>Document</title>
 </head>
 <body>
-  质疑举报
+  <div id="app">
+    <div class="root">
+      <p class="tips">
+        欢迎大家监督举报，让每一笔捐款都能帮助到真正有需要的人。水滴筹将严格保护举报人的信息安全。
+      </p>
+      <div class="div-form">
+        <textarea name="内容和依据" class="textarea-content" required="required" type="textarea" placeholder="请填写举报内容" maxlength="1000"></textarea>
+        <div class="div-upload-image">
+          <p class="title">
+              质疑证据图片 <span>(最多8张)</span>
+          </p>
+          <div class="tip">图片内容必须清晰可见以保证您所述信息的真实性</div>
+          <div class="div-image-wrap">
+            <div class="img-upload">
+              <img src="../images/upload.png" alt="">
+              <div name="发布最新动态图片">
+                <label for="uploadInput" class="upload-wrap"></label>
+                <input type="file" id="uploadInput" class="upload-file" multiple="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tel-wrap">
+          <input type="tel" class="input-tel" placeholder="请填写您的联系电话" name="联系电话" required="required">
+        </div>
+      </div>
+      <input type="submit" class="btn-commit" value="提交">
+    </div>
+  </div>
 </body>
 </html>

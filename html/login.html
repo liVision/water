@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 37.5px">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/login.css">
+  <script src="../utils/jquery.js"></script>
 </head>
 <body>
   <div class="app-root" id="app">
@@ -18,7 +19,7 @@
   				</div>
   				<div>
   					<div class="info-title">登记求助信息</div>
-  					<div class="help-title">登记后筹款顾问将尽快电话联系您，协助您发起筹款</div>
+  					<div class="help-tip">登记后筹款顾问将尽快电话联系您，协助您发起筹款</div>
   					<div>
   						<div class="input-wrap">
   							<input type="text" name="" placeholder="请输入你的手机号">
@@ -28,7 +29,7 @@
   						</div>
   						<span class="donation-title">你要为谁筹款</span>
   						<div class="input-wrap input-wrap-third">
-  							<select class="select-raise" dir="rtl">
+  							<select class="select-raise" dir="rtl" id="test1">
   								<option value>请选择</option>
   								<option value="自己">自己</option>
   								<option value="配偶/父母/子女/其他亲属">配偶/父母/子女/其他亲属</option>
@@ -37,13 +38,13 @@
   							</select>
   							<i class="arrow-btn"></i>
   						</div>
-  						<div class="patient-container">
+  						<div class="patient-container none">
   							<div class="patient-title">患者是否已在水滴筹筹款？ <span>(必选)</span></div>
   							<div class="select-content">
-  								<div class="select-content-left">	 <input type="radio" value="0" 		name="" id="0">
+  								<div class="select-content-left">	         <input type="radio" value="0" 		        name="choukuan" id="0">
   									<label for="0">尚未筹款</label>
   								</div>
-  								<div class="select-content-right">	 <input type="radio" value="1" 		name="" id="1">
+  								<div class="select-content-right">	       <input type="radio" value="1" 		name="choukuan" id="1">
   									<label for="1">已经在筹款</label>
   								</div>
   							</div>
@@ -53,6 +54,39 @@
   				</div>
   			</div>
   			<div>
+          <div class="step">
+            <div class="step-title">筹款流程</div>
+            <div class="step-list">
+              <div class="step-list-item">
+                <div class="step-list-item-content">
+                  <img src="../images/write.png" alt="" class="step-list-item-content-img">
+                  <div class="step-list-item-content-word">填写信息</div>
+                </div>
+                <div class="step-list-item-btn"></div>
+              </div>
+              <div class="step-list-item">
+                  <div class="step-list-item-content">
+                    <img src="../images/share.png" alt="" class="step-list-item-content-img">
+                    <div class="step-list-item-content-word">分享转发</div>
+                  </div>
+                  <div class="step-list-item-btn"></div>
+                </div>
+                <div class="step-list-item">
+                    <div class="step-list-item-content">
+                      <img src="../images/get-money.png" alt="" class="step-list-item-content-img">
+                      <div class="step-list-item-content-word">收到捐款</div>
+                    </div>
+                    <div class="step-list-item-btn"></div>
+                  </div>
+                  <div class="step-list-item">
+                      <div class="step-list-item-content">
+                        <img src="../images/tixian.png" alt="" class="step-list-item-content-img">
+                        <div class="step-list-item-content-word">审核提现</div>
+                      </div>
+                      <div class="step-list-item-btn"></div>
+                    </div>
+            </div>
+          </div>
   				<div class="info">
   					<h2 class="landing-title">他们为什么选择水滴筹？</h2>
   					<div class="section">
@@ -82,7 +116,7 @@
   						</p>
   					</div>	
   				</div>
-  				<div class="about">
+  				<!-- <div class="about">
   					<div class="about-title">关于水滴筹</div>
   					<div class="about-content">
   						<div class="about-content-item">
@@ -168,7 +202,7 @@
   							</div>
   						</div>
   					</div>
-  				</div>
+  				</div> -->
   				<div class="line"></div>
   				<div class="invest">
   					<h2 class="landing-title">选择腾讯旗下水滴筹 更放心</h2>
@@ -215,7 +249,7 @@
   							</li>
   							<li>
   								<div class="portrait">
-  									<img src="../images/wangxing.png" data-src="../images/wangxing.png" lazy="loaded">
+  									<img src="../images/xuxiaoping.png" data-src="../images/xuxiaoping.png" lazy="loaded">
   								</div>
   								<h5 class="name">徐小平</h5>
   								<p class="compony">真格基金创始人</p>
@@ -305,5 +339,6 @@
   		</div>
   	</div>
   </div>
+  <script src="../js/login.js"></script>
 </body>
 </html>
