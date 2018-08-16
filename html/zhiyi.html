@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 37.5px">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" href="../css/zhiyi.css">
+  <script src="../utils/jquery.js"></script>
 </head>
 <body>
   <div id="app">
@@ -25,7 +27,7 @@
               <img src="../images/upload.png" alt="">
               <div name="发布最新动态图片">
                 <label for="uploadInput" class="upload-wrap"></label>
-                <input type="file" id="uploadInput" class="upload-file" multiple="true">
+                <input type="file" id="uploadInput" class="upload-file" multiple="true" onchange="uploadImg(this)">
               </div>
             </div>
           </div>
@@ -37,5 +39,18 @@
       <input type="submit" class="btn-commit" value="提交">
     </div>
   </div>
+  <script>
+    function uploadImg(obj) {
+    var file = obj.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var innerHtml = '<div class="example"><a href="javascript:;" class="img-delete"></a><div class="img-wrap"><img class="image"></img></div></div>'
+      $(".div-image-wrap").append(innerHtml);
+      $('.example image').attr("src", e.target.result)
+    }
+    reader.readAsDataURL(file);
+    console.log("成功调用");
+  }
+  </script>
 </body>
 </html>
