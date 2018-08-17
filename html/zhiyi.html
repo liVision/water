@@ -42,11 +42,16 @@
   <script>
     function uploadImg(obj) {
     var file = obj.files[0];
+    console.log(obj.files);
+    // for (var i=0; i < files.length; i++) {
+
+    // }
+    var imgNum = $(".div-image-wrap .example").length;
     var reader = new FileReader();
     reader.onload = function(e) {
       var innerHtml = '<div class="example"><a href="javascript:;" class="img-delete"></a><div class="img-wrap"><img class="image"></img></div></div>'
       $(".div-image-wrap").append(innerHtml);
-      $('.example image').attr("src", e.target.result)
+      $('.example img').attr("src", e.target.result)
     }
     reader.readAsDataURL(file);
     console.log("成功调用");

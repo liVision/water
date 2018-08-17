@@ -140,3 +140,36 @@ input, select, textarea {
 ::-webkit-input-placeholder { /* WebKit browsers */
   color:    #999;
 }
+.div-upload-image .div-image-wrap .example {
+  position: relative;
+  width: 1.84rem;
+  height: 1.84rem;
+  font-size: .32rem;
+  margin: 0 .26667rem .26667rem 0;
+  text-align: center;
+  -webkit-border-radius: .06667rem;
+  border-radius: .06667rem;
+  background-color: #f8f8f8;
+  border: 1px solid #bbb;
+}
+.example .img-delete {
+  position: absolute;
+  display: block;
+  background: url(../images/close-whtie.png) 0 0 no-repeat;
+  background-size: 100%;
+  width: .42667rem;
+  height: .42667rem;
+  top: -.24rem;
+  left: -.24rem;
+}
+.example .img-wrap {
+  width: 1.84rem;
+  height: 1.84rem;
+  overflow: hidden;
+}
+.example .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
