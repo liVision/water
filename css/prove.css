@@ -162,6 +162,3 @@ option {
     transform: rotate(135deg);
     z-index: 1;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: #999;
-}

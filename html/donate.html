@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 37.5px">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/donate.css">
+  <script src="../utils/jquery.js"></script>
+</head>
+<body>
+	<div id="app" class="app-root">
+		<div class="page">
+			<div class="title">
+				<span>请选择您要帮助的金额</span>
+			</div>
+			<div class="payment-wrap">
+				<div class="sd-payment-picker">
+					<ul class="sd-payment-picker__list">
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell">
+								<em class="payment-amount">10</em>元<i></i>
+							</span>
+						</li>
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell selected">
+								<em class="payment-amount">20</em>元<i></i>
+							</span>
+						</li>
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell">
+								<em class="payment-amount">50</em>元<i></i>
+							</span>
+						</li>
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell">
+								<em class="payment-amount">100</em>元<i></i>
+							</span>
+						</li>
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell">
+								<em class="payment-amount">500</em>元<i></i>
+							</span>
+						</li>
+						<li class="sd-payment-picker__list-item">
+							<span class="payment-picker-cell">
+								<em class="payment-amount">1000</em>元<i></i>
+							</span>
+						</li>
+					</ul>
+        <div class="sd-payment-picker__other-amount">
+        	<input type="number" name="" pattern="[0-9]*" placeholder="其他金额" class="other-amount-input">
+        	<label class="amount-unit">元</label>
+        </div>
+				</div>
+			</div>
+			<div class="anonymous-donation drips-1px-b">
+				<label class="anonymous-donation-title">
+					匿名捐款
+				</label>
+				<div class="vux-x-switch weui-cell weui-cell__switch">
+					<div class="weui-cell__bd">
+						<label class="weui-label" style="display: block; width: 1em;"></label>
+					</div>
+					<div class="weui-cell__ft">
+						<input class="weui-switch" type="checkbox"></input>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-wrap">
+				<button class="sd-button sd-button--primary">
+					<span class="sd-button__text">立即支持</span>
+				</button>
+				<div class="agreement-tips">
+      我已阅读并同意《用户协议》
+    </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/donate.js"></script>
+</body>

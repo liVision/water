@@ -54,3 +54,6 @@ a {
 .none {
   display: none;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #dbdbdd;
+}

@@ -41,21 +41,30 @@
   </div>
   <script>
     function uploadImg(obj) {
-    var file = obj.files[0];
-    console.log(obj.files);
-    // for (var i=0; i < files.length; i++) {
+      var file = obj.files[0];
+      // for (var i=0; i < files.length; i++) {
 
-    // }
-    var imgNum = $(".div-image-wrap .example").length;
-    var reader = new FileReader();
-    reader.onload = function(e) {
-      var innerHtml = '<div class="example"><a href="javascript:;" class="img-delete"></a><div class="img-wrap"><img class="image"></img></div></div>'
-      $(".div-image-wrap").append(innerHtml);
-      $('.example img').attr("src", e.target.result)
+      // }
+      var imgNum = $(".div-image-wrap .example").length;
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var innerHtml = '<div class="example"><a href="javascript:;" class="img-delete"></a><div class="img-wrap"><img class="image"></img></div></div>'
+        $(".div-image-wrap").append(innerHtml);
+        $('.example img').eq(imgNum).attr("src", e.target.result)
+        if (imgNum == 7) {
+          console.log('两张图片');
+          $('.img-upload').css("display", "none");
+        }
+      }
+      reader.readAsDataURL(file);
     }
-    reader.readAsDataURL(file);
-    console.log("成功调用");
-  }
+    $('.div-upload-image').delegate('.img-delete', 'click', function() {
+      $(this).parent().remove();
+      var imgNum = $(".div-image-wrap .example").length;
+      if (imgNum < 8) {
+        $('.img-upload').css("display", "block");
+      }
+    });
   </script>
 </body>
 </html>
